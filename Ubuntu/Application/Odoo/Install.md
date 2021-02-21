@@ -26,7 +26,7 @@ sudo su - postgres -c "createuser -s odoo" 2> /dev/null || true
 ```                    
 ## Step 5 : Install Python Dependencies
 ```
-sudo apt-get install git python3 python3-pip build-essential wget python3-dev python3-venv python3-wheel libxslt-dev libzip-dev libldap2-dev libsasl2-dev python3-setuptools node-less libjpeg-dev gdebi -y
+sudo apt install python3-dev libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev libtiff5-dev libjpeg8-dev libopenjp2-7-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev libharfbuzz-dev libfribidi-dev libxcb1-dev libpq-dev
 ```                    
 ## Step 6 : Install Python PIP Dependencies
 ```
@@ -47,10 +47,14 @@ sudo npm install -g rtlcss
 sudo apt-get install xfonts-75dpi
 ```                    
 ```
-sudo wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.bionic_amd64.deb
+wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb
 ```
 ```
 sudo dpkg -i wkhtmltox_0.12.6-1.bionic_amd64.deb
+```
+Or
+```
+sudo apt install ./wkhtmltox_0.12.6-1.focal_amd64.deb
 ```
 ```
 sudo cp /usr/local/bin/wkhtmltoimage /usr/bin/wkhtmltoimage
