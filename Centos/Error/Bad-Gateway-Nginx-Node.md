@@ -54,4 +54,8 @@ To enable the setting, execute the following command from the shell.
 ```
 # setsebool -P httpd_can_network_connect on
 ```
+or
+```
+# setsebool -P httpd_can_network_connect true
+```
 You do not need to reboot the machine or SELinux. 
