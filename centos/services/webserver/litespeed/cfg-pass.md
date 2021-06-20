@@ -1,0 +1,1 @@
+/usr/local/lsws/admin/misc/admpass.sh
