@@ -109,8 +109,17 @@ lxc profile edit p2
 lxc launch ubuntu:18.04 c1 --profile p2
 ```
 ## Cara membuat file
+file
 ```
 lxc file push namefile nanacontainer/home/ubuntu
+```
+untuk copy dari host ke kontainer, dengan -r
+```
+lxc file push -r direcoty/ nanacontainer/home/ubuntu/
+```
+untuk copy dari kontainer ke host
+```
+lxc file pull -r nanacontainer/home/ubuntu/ 
 ```
 ## Membuat dan Restore snapshot
 ```
